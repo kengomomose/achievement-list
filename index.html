@@ -1,0 +1,144 @@
+---
+layout: default
+title: 研究業績リスト
+---
+
+<h1 class="page-title">研究業績リスト</h1>
+
+<p class="applicant-info">{{ site.applicant.name_ja }}（{{ site.applicant.name_en }}）</p>
+
+{% assign data = site.data.achievements %}
+
+<!-- ===== (1) 学術雑誌等に発表した論文、著書 ===== -->
+<section class="achievement-section">
+  <h2>(1) 学術雑誌等（紀要・論文集等も含む）に発表した論文、著書</h2>
+
+  <h3>査読あり</h3>
+  {% if data.papers.reviewed.size > 0 %}
+    {% for entry in data.papers.reviewed %}
+      {% include entry.html entry=entry section="papers" number=forloop.index %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+
+  <h3>査読なし</h3>
+  {% if data.papers.not_reviewed.size > 0 %}
+    {% for entry in data.papers.not_reviewed %}
+      {% include entry.html entry=entry section="papers" number=forloop.index %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+</section>
+
+<!-- ===== (2) 解説、総説 ===== -->
+<section class="achievement-section">
+  <h2>(2) 学術雑誌等又は商業誌における解説、総説</h2>
+  {% if data.reviews.size > 0 %}
+    {% for entry in data.reviews %}
+      {% include entry.html entry=entry section="reviews" number=forloop.index %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+</section>
+
+<!-- ===== (3) 国際会議における発表 ===== -->
+<section class="achievement-section">
+  <h2>(3) 国際会議における発表</h2>
+
+  <h3>口頭</h3>
+  {% if data.international.oral.size > 0 %}
+    {% assign intl_num = 0 %}
+    {% for entry in data.international.oral %}
+      {% assign intl_num = intl_num | plus: 1 %}
+      {% include entry.html entry=entry section="international" number=intl_num %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+
+  <h3>ポスター</h3>
+  {% if data.international.poster.size > 0 %}
+    {% for entry in data.international.poster %}
+      {% assign intl_num = intl_num | plus: 1 %}
+      {% include entry.html entry=entry section="international" number=intl_num %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+</section>
+
+<!-- ===== (4) 国内学会・シンポジウム等における発表 ===== -->
+<section class="achievement-section">
+  <h2>(4) 国内学会・シンポジウム等における発表</h2>
+
+  {% assign dom_num = 0 %}
+
+  <h3>口頭</h3>
+  {% if data.domestic.oral.size > 0 %}
+    {% for entry in data.domestic.oral %}
+      {% assign dom_num = dom_num | plus: 1 %}
+      {% include entry.html entry=entry section="domestic" number=dom_num %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+
+  <h3>ポスター</h3>
+  {% if data.domestic.poster.size > 0 %}
+    {% for entry in data.domestic.poster %}
+      {% assign dom_num = dom_num | plus: 1 %}
+      {% include entry.html entry=entry section="domestic" number=dom_num %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+
+  <h3>共著者としての発表</h3>
+  {% if data.domestic.coauthor.size > 0 %}
+    {% for entry in data.domestic.coauthor %}
+      {% assign dom_num = dom_num | plus: 1 %}
+      {% include entry.html entry=entry section="domestic" number=dom_num %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+</section>
+
+<!-- ===== (5) 特許等 ===== -->
+<section class="achievement-section">
+  <h2>(5) 特許等</h2>
+  {% if data.patents.size > 0 %}
+    {% for entry in data.patents %}
+      {% include entry.html entry=entry section="patents" number=forloop.index %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+</section>
+
+<!-- ===== (6) 受賞歴 ===== -->
+<section class="achievement-section">
+  <h2>(6) 受賞歴</h2>
+  {% if data.awards.size > 0 %}
+    {% for entry in data.awards %}
+      {% include entry.html entry=entry section="awards" number=forloop.index %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+</section>
+
+<!-- ===== (7) その他 ===== -->
+<section class="achievement-section">
+  <h2>(7) その他</h2>
+  {% if data.others.size > 0 %}
+    {% for entry in data.others %}
+      {% include entry.html entry=entry section="others" number=forloop.index %}
+    {% endfor %}
+  {% else %}
+    <p class="none">なし</p>
+  {% endif %}
+</section>

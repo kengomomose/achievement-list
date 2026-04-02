@@ -1,0 +1,73 @@
+{%- comment -%}
+  entry.html — 業績エントリのレンダリング
+  パラメータ: entry, section, number
+{%- endcomment -%}
+
+{%- assign e = include.entry -%}
+{%- assign sec = include.section -%}
+{%- assign num = include.number -%}
+
+<div class="entry">
+{%- comment -%}====== (1) 学術論文 ======{%- endcomment -%}
+{%- if sec == "papers" -%}
+  <span class="entry-number">[{{ num }}] </span>
+  {%- for author in e.authors -%}
+    {%- if author.me -%}<b class="applicant"><u>{{ author.name }}</u></b>
+    {%- else -%}{{ author.name }}
+    {%- endif -%}
+    {%- if author.eq -%}<sup>#</sup>{%- endif -%}
+    {%- unless forloop.last -%}
+      {%- assign remaining = e.authors.size | minus: forloop.index -%}
+      {%- if remaining == 1 and e.last_sep == "and" -%}, and {% elsif remaining == 1 and e.last_sep == "&" %} &amp; {% else %}, {% endif -%}
+    {%- endunless -%}
+  {%- endfor -%}, {{ e.title }}, {{ e.journal }}, {{ e.volume }}, {{ e.pages }}, {{ e.year }}
+  {%- if e.note and e.note != "" %} {{ e.note }}{%- endif -%}
+
+{%- comment -%}====== (2) 解説・総説 ======{%- endcomment -%}
+{%- elsif sec == "reviews" -%}
+  <span class="entry-number">[{{ num }}] </span>
+  {%- for author in e.authors -%}
+    {%- if author.me -%}<b class="applicant"><u>{{ author.name }}</u></b>
+    {%- else -%}{{ author.name }}
+    {%- endif -%}
+    {%- unless forloop.last -%}、{%- endunless -%}
+  {%- endfor -%}、「{{ e.title }}」、{{ e.publication }}、{{ e.detail }}、{{ e.pages }}、{{ e.year }}
+
+{%- comment -%}====== (3) 国際会議 ======{%- endcomment -%}
+{%- elsif sec == "international" -%}
+  <span class="entry-number">[{{ num }}] </span>
+  {%- if e.presenter -%}〇{%- endif -%}
+  {%- for author in e.authors -%}
+    {%- if author.me -%}<b class="applicant"><u>{{ author.name }}</u></b>
+    {%- else -%}{{ author.name }}
+    {%- endif -%}
+    {%- if author.eq -%}<sup>#</sup>{%- endif -%}
+    {%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}, {{ e.title }}, {{ e.conference }}, {{ e.place }}, {{ e.month }}, {{ e.year }}
+  {%- if e.peer_reviewed -%}, 査読あり{%- endif -%}
+
+{%- comment -%}====== (4) 国内学会 ======{%- endcomment -%}
+{%- elsif sec == "domestic" -%}
+  <span class="entry-number">[{{ num }}] </span>
+  {%- for author in e.authors -%}
+    {%- if author.me and e.presenter -%}<b class="applicant"><u>〇{{ author.name }}</u></b>
+    {%- elsif author.me -%}<b class="applicant"><u>{{ author.name }}</u></b>
+    {%- else -%}{{ author.name }}
+    {%- endif -%}
+    {%- unless forloop.last -%}、{%- endunless -%}
+  {%- endfor -%}「{{ e.title }}」、{{ e.conference }}、{{ e.place }}、{{ e.year }}年{{ e.month }}月
+
+{%- comment -%}====== (6) 受賞歴 ======{%- endcomment -%}
+{%- elsif sec == "awards" -%}
+  <span class="entry-number">[{{ num }}] </span>{{ e.organization }}、{{ e.award_name }}「{{ e.title }}」、{{ e.year }}年{{ e.month }}月
+
+{%- comment -%}====== (5) 特許 ======{%- endcomment -%}
+{%- elsif sec == "patents" -%}
+  <span class="entry-number">[{{ num }}] </span>{{ e.title }}、{{ e.status }}、{{ e.number }}、{{ e.year }}
+
+{%- comment -%}====== (7) その他 ======{%- endcomment -%}
+{%- elsif sec == "others" -%}
+  <span class="entry-number">[{{ num }}] </span>{{ e.text }}
+
+{%- endif -%}
+</div>

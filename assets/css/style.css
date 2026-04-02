@@ -1,0 +1,123 @@
+/* ============================================
+   研究業績リスト スタイルシート
+   ============================================ */
+
+/* --- ベースリセット・フォント --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "ＭＳ 明朝", "MS Mincho", "Yu Mincho", "游明朝", serif;
+  font-size: 10.5pt;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+}
+
+/* --- ページタイトル --- */
+.page-title {
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.applicant-info {
+  text-align: center;
+  font-size: 10.5pt;
+  margin-bottom: 2em;
+}
+
+/* --- セクション --- */
+.achievement-section {
+  margin-bottom: 1.8em;
+}
+
+.achievement-section h2 {
+  font-size: 10.5pt;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2em;
+}
+
+.achievement-section h3 {
+  font-size: 10pt;
+  font-weight: normal;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+  padding-left: 0.5em;
+}
+
+/* --- エントリ --- */
+.entry {
+  margin-bottom: 0.6em;
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+  font-size: 10pt;
+  line-height: 1.5;
+}
+
+.entry-number {
+  font-size: 10pt;
+}
+
+/* --- 申請者名: 太字＋下線 --- */
+.applicant {
+  font-weight: bold;
+}
+.applicant u {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* --- 上付き文字 (#マーク) --- */
+sup {
+  font-size: 0.7em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+/* --- 「なし」表示 --- */
+.none {
+  padding-left: 2.5em;
+  font-size: 10pt;
+  color: #333;
+}
+
+/* --- フッター --- */
+.site-footer {
+  max-width: 800px;
+  margin: 2em auto 0;
+  padding: 1em 1.5em;
+  border-top: 1px solid #ccc;
+  text-align: right;
+  font-size: 9pt;
+  color: #666;
+}
+
+/* --- 印刷用スタイル --- */
+@media print {
+  body {
+    font-size: 10pt;
+  }
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+  .site-footer {
+    display: none;
+  }
+  .entry {
+    page-break-inside: avoid;
+  }
+}

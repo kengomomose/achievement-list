@@ -1,0 +1,14 @@
+title: 研究業績リスト
+description: Research Achievement List
+baseurl: "/achievement-list"  # リポジトリ名に合わせて変更してください
+url: ""  # https://USERNAME.github.io に変更してください
+
+# 申請者情報
+applicant:
+  name_en: "Firstname Lastname"
+  name_ja: "姓名"
+
+# Jekyll設定
+markdown: kramdown
+theme: null
+plugins: []
