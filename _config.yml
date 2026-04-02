@@ -1,12 +1,12 @@
 title: 研究業績リスト
 description: Research Achievement List
 baseurl: "/achievement-list"  # リポジトリ名に合わせて変更してください
-url: ""  # https://USERNAME.github.io に変更してください
+url: ""  # https://kengomomose.github.io に変更してください
 
 # 申請者情報
 applicant:
-  name_en: "Firstname Lastname"
-  name_ja: "姓名"
+  name_en: "Kengo Momose"
+  name_ja: "百瀬賢吾"
 
 # Jekyll設定
 markdown: kramdown
