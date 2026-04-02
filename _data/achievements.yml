@@ -2,8 +2,7 @@
 # 研究業績リスト データファイル
 # =============================================================================
 # Nagoya University / Kengo Momose
-# Publicly confirmed draft as of 2026-04-02
-# Unconfirmed items are intentionally left empty.
+# Last updated: 2026-04-02
 #
 # ■ 使い方
 #   新しい業績を追加するには、該当セクションの entries: の下に
@@ -25,7 +24,7 @@
 # (1) 学術雑誌等に発表した論文、著書
 # ---------------------------------------------------------------------------
 # 査読あり: 著者, 題名, 掲載誌名, 巻号, ページ, 発行年
-# 査読なし: 同上
+# 査読なし: 同上（著書もここに含む）
 #
 # lang: en の場合
 #   → 著者間は ", " で区切り、最後の著者の前に last_sep ("and" or "&") を挿入
@@ -69,7 +68,17 @@ papers:
 #   pages: "pXXX-XXX"
 #   year: 2024
 # ---------------------------------------------------------------------------
-reviews: []
+reviews:
+  - lang: ja
+    authors:
+      - { name: "蟹江慧" }
+      - { name: "百瀬賢吾", me: true }
+      - { name: "加藤竜司" }
+    title: "動物細胞培養の計測と自動化の取り組み、今後の展望"
+    publication: "情報技術協会"
+    detail: ""
+    pages: "p381-391"
+    year: 2023
 
 # ---------------------------------------------------------------------------
 # (3) 国際会議における発表
@@ -104,15 +113,44 @@ international:
         - { name: "Kei Kanie" }
         - { name: "Kenjiro Tanaka" }
         - { name: "Ryuji Kato" }
-      last_sep: "and"
       title: "Profiling of Cell Culture Motion for The Standardization and Education"
       conference: "JAACT 2023"
       place: "Nagoya"
-      month: "November"
+      month: "December"
       year: 2023
-      peer_reviewed: false
+      peer_reviewed: true
 
-  poster: []
+  poster:
+    - lang: en
+      presenter: true
+      authors:
+        - { name: "Kengo Momose", me: true }
+        - { name: "Takeru Shiina" }
+        - { name: "Yuto Takemoto" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Kei Kanie" }
+        - { name: "Ryuji Kato" }
+      title: "Ambient intelligence for the quantification of cell culture operations"
+      conference: "ESACT 2024"
+      place: "Edinburgh"
+      month: "June"
+      year: 2024
+      peer_reviewed: true
+
+    - lang: en
+      presenter: true
+      authors:
+        - { name: "Kengo Momose", me: true }
+        - { name: "Taishi Kodama" }
+        - { name: "Takumi Hisada" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Ryuji Kato" }
+      title: "Morphology-based Evaluation of Immunosuppressive Potency in Human Mesenchymal Stem Cells"
+      conference: "TERMIS EU 2025"
+      place: "Freiburg"
+      month: "May"
+      year: 2025
+      peer_reviewed: true
 
 # ---------------------------------------------------------------------------
 # (4) 国内学会・シンポジウム等における発表
@@ -307,15 +345,31 @@ domestic:
 # ---------------------------------------------------------------------------
 # (5) 特許等
 # ---------------------------------------------------------------------------
-# 該当なしの場合は patents: [] のまま
+# 申請中 / 公開中 / 取得 を明記
 #
 # --- テンプレート ---
-# - title: "特許名"
-#   status: "申請中"       # 申請中 / 公開中 / 取得
-#   number: "特願XXXX-XXXXXX"
+# - lang: ja
+#   authors:
+#     - { name: "発明者1" }
+#     - { name: "百瀬賢吾", me: true }
+#   title: "特許名"
+#   status: "申請中"
+#   number: "受付番号: XXXX"
 #   year: 2024
+#   month: 8
 # ---------------------------------------------------------------------------
-patents: []
+patents:
+  - lang: ja
+    authors:
+      - { name: "加藤竜司" }
+      - { name: "百瀬賢吾", me: true }
+      - { name: "竹本悠人" }
+      - { name: "椎名健" }
+    title: "情報処理装置、情報処理システム、情報処理方法およびコンピュータプログラム"
+    status: "申請中"
+    number: "受付番号: C20230382JP#P01"
+    year: 2024
+    month: 8
 
 # ---------------------------------------------------------------------------
 # (6) 受賞歴
@@ -349,11 +403,17 @@ awards:
     year: 2024
     month: 3
 
+  - organization: "ESACT（欧州動物細胞工学会）"
+    award_name: "The Top 100 presentation in Poster Category"
+    title: "Ambient intelligence for the quantification of cell culture operations"
+    year: 2024
+    month: 6
+
   - organization: "日本生物工学会"
     award_name: "第13回 生物工学学生優秀賞（飛翔賞）"
     title: "アンビエントインテリジェンスを用いた細胞培養手技の定量化と標準化"
     year: 2024
-    month: 9
+    month: 6
 
   - organization: "Laboratory Automation Developers Conference 2024"
     award_name: "優秀発表賞（ベストポスター賞）"
@@ -375,4 +435,7 @@ awards:
 # --- テンプレート ---
 # - text: "プログラム名 採用 YYYY年M月～"
 # ---------------------------------------------------------------------------
-others: []
+others:
+  - text: "JST SPRING 名古屋大学融合フロンティアフェローシップ 採択（下記JST BOOSTに採択の為 辞退）"
+  - text: "JST BOOST 名古屋大学次世代AI人材育成事業 採択 2024年4月～2027年3月 28.5万円/月の研究専念支援金"
+  - text: "著作物：百瀬賢吾、加藤竜司「動画情報からの細胞操作手技の数値化アルゴリズム」2024年2月 企業へライセンス化"
