@@ -75,8 +75,8 @@ reviews:
       - { name: "百瀬賢吾", me: true }
       - { name: "加藤竜司" }
     title: "動物細胞培養の計測と自動化の取り組み、今後の展望"
-    publication: "情報技術協会"
-    detail: ""
+    publication: "株式会社情報技術協会"
+    detail: "第7章、11節"
     pages: "p381-391"
     year: 2023
 
