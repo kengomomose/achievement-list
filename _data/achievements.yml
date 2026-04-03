@@ -129,7 +129,7 @@ international:
         - { name: "Kei Kanie" }
         - { name: "Kenjiro Tanaka" }
         - { name: "Ryuji Kato" }
-      title: "Profiling of Cell Culture Motion for The Standardization and Education"
+      title: "Profiling of cell culture motion for the standardization and education"
       conference: "JAACT 2023"
       place: "Nagoya"
       month: "December"
@@ -145,7 +145,7 @@ international:
         - { name: "Kenjiro Tanaka" }
         - { name: "Tadayoshi Aoyama" }
         - { name: "Ryuji Kato" }
-      title: "Quantitative Analysis of Human Work Movements in Cell Culture Using Video-Based Approaches"
+      title: "Quantitative analysis of human work movements in cell culture using video-based approaches"
       conference: "JAACT 2025"
       place: "Osaka"
       month: "December"
@@ -193,7 +193,7 @@ international:
         - { name: "Takumi Hisada" }
         - { name: "Kenjiro Tanaka" }
         - { name: "Ryuji Kato" }
-      title: "Morphology-based Evaluation of Immunosuppressive Potency in Human Mesenchymal Stem Cells"
+      title: "Morphology-based evaluation of immunosuppressive potency in human mesenchymal stem cells"
       conference: "TERMIS EU 2025"
       place: "Freiburg"
       month: "May"
@@ -557,7 +557,7 @@ awards:
 
   - organization: "JAACT 2023"
     award_name: "Outstanding Oral Presentation Award"
-    title: "Profiling of Cell Culture Motion for The Standardization and Education"
+    title: "Profiling of cell culture motion for the standardization and education"
     year: 2023
     month: 12
 
