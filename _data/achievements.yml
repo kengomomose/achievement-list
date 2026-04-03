@@ -266,6 +266,19 @@ domestic:
       presenter: true
       authors:
         - { name: "百瀬賢吾", me: true }
+        - { name: "椎名健" }
+        - { name: "田中健二郎" }
+        - { name: "加藤竜司" }
+      title: "アンビエントインテリジェンス技術の応用による細胞培養作業解析"
+      conference: "第24回日本再生医療学会総会"
+      place: "神奈川"
+      year: 2025
+      month: 3
+
+    - lang: ja
+      presenter: true
+      authors:
+        - { name: "百瀬賢吾", me: true }
         - { name: "森涼哉" }
         - { name: "椎名健" }
         - { name: "田中健二郎" }
@@ -340,6 +353,54 @@ domestic:
       conference: "日本薬学会第144年会"
       place: "神奈川"
       year: 2024
+      month: 3
+
+    - lang: ja
+      presenter: false
+      authors:
+        - { name: "椎名健" }
+        - { name: "百瀬賢吾", me: true }
+        - { name: "波多野俊介" }
+        - { name: "竹本悠人" }
+        - { name: "田中健二郎" }
+        - { name: "加藤竜司" }
+      title: "画像解析を用いたPATとしてのコンフレンシー評価技術"
+      conference: "第24回日本再生医療学会総会"
+      place: "神奈川"
+      year: 2025
+      month: 3
+
+    - lang: ja
+      presenter: false
+      authors:
+        - { name: "蟹江慧" }
+        - { name: "玉田悠太" }
+        - { name: "小林優香" }
+        - { name: "長田朋也" }
+        - { name: "魚平剛史" }
+        - { name: "百瀬賢吾", me: true }
+        - { name: "竹本悠人" }
+        - { name: "加藤竜司" }
+      title: "細胞培養手技教育および安定化のための継代操作の計測と改善検証"
+      conference: "第24回日本再生医療学会総会"
+      place: "神奈川"
+      year: 2025
+      month: 3
+
+    - lang: ja
+      presenter: false
+      authors:
+        - { name: "蟹江慧" }
+        - { name: "秋本匠啓" }
+        - { name: "角振啓太" }
+        - { name: "玉田悠太" }
+        - { name: "百瀬賢吾", me: true }
+        - { name: "竹本悠人" }
+        - { name: "加藤竜司" }
+      title: "細胞培養手技の数値化と共有化による人材育成の提案"
+      conference: "第25回日本再生医療学会総会"
+      place: "神戸"
+      year: 2026
       month: 3
 
 # ---------------------------------------------------------------------------
