@@ -113,11 +113,43 @@ international:
         - { name: "Kei Kanie" }
         - { name: "Kenjiro Tanaka" }
         - { name: "Ryuji Kato" }
+      title: "Ambient intelligence for cell manufacturing digital transformation"
+      conference: "TERMIS-AP 2023"
+      place: "Hong Kong"
+      month: "December"
+      year: 2023
+      peer_reviewed: true
+
+    - lang: en
+      presenter: true
+      authors:
+        - { name: "Kengo Momose", me: true }
+        - { name: "Takeru Shiina" }
+        - { name: "Yuto Takemoto" }
+        - { name: "Kei Kanie" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Ryuji Kato" }
       title: "Profiling of Cell Culture Motion for The Standardization and Education"
       conference: "JAACT 2023"
       place: "Nagoya"
       month: "December"
       year: 2023
+      peer_reviewed: true
+
+    - lang: en
+      presenter: true
+      authors:
+        - { name: "Kengo Momose", me: true }
+        - { name: "Ryoya Mori" }
+        - { name: "Takeru Shiina" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Tadayoshi Aoyama" }
+        - { name: "Ryuji Kato" }
+      title: "Quantitative Analysis of Human Work Movements in Cell Culture Using Video-Based Approaches"
+      conference: "JAACT 2025"
+      place: "Osaka"
+      month: "December"
+      year: 2025
       peer_reviewed: true
 
   poster:
@@ -137,6 +169,22 @@ international:
       year: 2024
       peer_reviewed: true
 
+    - lang: en
+      presenter: true
+      authors:
+        - { name: "Kengo Momose", me: true }
+        - { name: "Taishi Kodama" }
+        - { name: "Kakeru Koide" }
+        - { name: "Takumi Hisada" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Ryuji Kato" }
+      title: "Examination of critical factors in immunosuppression potency assay for mesenchymal stem cells "
+      conference: "The 29th Symposium of Young Asian Biological Engineer's Community"
+      place: "Korea"
+      month: "October"
+      year: 2024
+      peer_reviewed: true
+      
     - lang: en
       presenter: true
       authors:
@@ -248,6 +296,21 @@ domestic:
       presenter: true
       authors:
         - { name: "百瀬賢吾", me: true }
+        - { name: "小出駆" }
+        - { name: "古谷太樹" }
+        - { name: "久田拓海" }
+        - { name: "田中健二郎" }
+        - { name: "加藤竜司" }
+      title: "間葉系幹細胞免疫抑制能評価のための混合リンパ球反応試験の重要パラメータ検証"
+      conference: "第23回日本再生医療学会総会"
+      place: "新潟"
+      year: 2024
+      month: 3
+
+    - lang: ja
+      presenter: true
+      authors:
+        - { name: "百瀬賢吾", me: true }
         - { name: "児玉大志" }
         - { name: "小出駆" }
         - { name: "久田拓海" }
@@ -311,6 +374,21 @@ domestic:
       presenter: true
       authors:
         - { name: "百瀬賢吾", me: true }
+        - { name: "椎名健" }
+        - { name: "田中健二郎" }
+        - { name: "竹本悠人" }
+        - { name: "蟹江慧" }
+        - { name: "加藤竜司" }
+      title: "細胞製造能率化を指向したアンビエントインテリジェンスの可能性実証"
+      conference: "生物工学若手研究者の集い（若手会）夏のセミナー2023"
+      place: "東京"
+      year: 2023
+      month: 6
+
+    - lang: ja
+      presenter: true
+      authors:
+        - { name: "百瀬賢吾", me: true }
         - { name: "小出駆" }
         - { name: "古谷太樹" }
         - { name: "久田拓海" }
@@ -339,6 +417,21 @@ domestic:
 
   # --- 共著者としての発表（〇なし、申請者は太字＋下線のみ） ---
   coauthor:
+    - lang: ja
+      presenter: false
+      authors:
+        - { name: "Takeru Shiina" }
+        - { name: "Kengo Momose", me: true }
+        - { name: "Yuto Takemoto" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Kei Kanie" }
+        - { name: "Ryuji Kato" }
+      title: "Ambient intelligence for cell manufacturing DX"
+      conference: "The 28th Symposium of Young Asian Biological Engineers’ Community"
+      place: "Taiwan"
+      year: 2023
+      month: 7
+    
     - lang: ja
       presenter: false
       authors:
