@@ -200,6 +200,22 @@ international:
       year: 2025
       peer_reviewed: true
 
+    - lang: en
+      presenter: true
+      authors:
+        - { name: "Kengo Momose", me: true }
+        - { name: "Ryoya Mori" }
+        - { name: "Takeru Shiina" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Tadayoshi Aoyama" }
+        - { name: "Ryuji Kato" }
+      title: "Standardization of operational movements in cell culture using ambient intelligence technologies"
+      conference: "TERMIS AP 2026"
+      place: "Christchurch"
+      month: "October"
+      year: 2026
+      peer_reviewed: true
+
 # ---------------------------------------------------------------------------
 # (4) 国内学会・シンポジウム等における発表
 # ---------------------------------------------------------------------------
@@ -353,6 +369,22 @@ domestic:
       year: 2025
       month: 9
 
+    - lang: ja
+      presenter: true
+      authors:
+        - { name: "百瀬賢吾", me: true }
+        - { name: "岡田真衣" }
+        - { name: "潘佳" }
+        - { name: "稲崎健太朗" }
+        - { name: "石神隆寛" }
+        - { name: "入倉基樹" }
+        - { name: "加藤竜司" }
+      title: "マイクロキャリア培養の設計・評価に向けたCFDシミュレーション基盤技術の構築"
+      conference: "第78回日本生物工学会大会"
+      place: "北海道"
+      year: 2026
+      month: 9
+
   # --- ポスター発表 ---
   poster:
     - lang: ja
@@ -414,6 +446,19 @@ domestic:
       place: "茨城"
       year: 2024
       month: 9
+
+    - lang: ja
+      presenter: true
+      authors:
+        - { name: "百瀬賢吾", me: true }
+        - { name: "椎名健" }
+        - { name: "田中健二郎" }
+        - { name: "加藤竜司" }
+      title: "動画解析による細胞培養手技の可視化と定量評価"
+      conference: "Laboratory Automation Developers Conference 2026"
+      place: "東京"
+      year: 2026
+      month: 7  
 
   # --- 共著者としての発表（〇なし、申請者は太字＋下線のみ） ---
   coauthor:
@@ -590,6 +635,12 @@ awards:
     title: "Ambient Intelligenceを用いた細胞製造作業のデジタルトランスフォーメーション"
     year: 2026
     month: 1
+  
+  - organization: "Laboratory Automation Developers Conference 2024"
+    award_name: "敢闘賞"
+    title: "動画解析による細胞培養手技の可視化と定量評価"
+    year: 2026
+    month: 7  
 
 # ---------------------------------------------------------------------------
 # (7) その他
