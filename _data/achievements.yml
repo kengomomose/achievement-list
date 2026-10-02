@@ -49,7 +49,26 @@
 #   note: ""                 # 補足（"(#:equal contribution)" など）
 # ---------------------------------------------------------------------------
 papers:
-  reviewed: []
+  reviewed:
+    - lang: en
+      authors:
+        - { name: "Kengo Momose", me: true }
+        - { name: "Takeru Shiina" }
+        - { name: "Yuto Takemoto" }
+        - { name: "Mai Okada" }
+        - { name: "Kakeru Koide" }
+        - { name: "Tomohiro Yokoi" }
+        - { name: "Ayako Sugimoto" }
+        - { name: "Kei Kanie" }
+        - { name: "Kenjiro Tanaka" }
+        - { name: "Ryuji Kato" }
+      last_sep: "and"
+      title: "Ambient intelligence-based framework for quantitative evaluation of cell culture operations to support standardization and training"
+      journal: "Regenerative Therapy"
+      volume: "Volume 33"
+      pages: "101178"
+      year: 2026
+      note: ""
   not_reviewed: []
 
 # ---------------------------------------------------------------------------
